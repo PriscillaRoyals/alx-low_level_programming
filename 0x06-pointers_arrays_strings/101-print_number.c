@@ -11,7 +11,7 @@ void print_number(int n)
 	int i, l, x, h, ans, consN, superN;
 
 	if (n < 0)
-		putchar('-');
+		_putchar('-');
 
 	consN = n, ans = n, superN = n;
 
@@ -26,7 +26,7 @@ void print_number(int n)
 
 	if (n == 0)
 	{
-		putchar('0');
+		_putchar('0');
 	}
 	else
 	{
@@ -39,10 +39,9 @@ void print_number(int n)
 				x--;
 			}
 			ans =  ans % 10;
-			putchar(abs(ans)  + '0');
+			_putchar(abs(ans)  + '0');
 			ans = consN;
 			h--;
 		}
 	}
 }
-
